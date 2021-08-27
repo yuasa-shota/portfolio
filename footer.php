@@ -1,0 +1,1 @@
+<footer><small>&copy; Yuasa Shota 2021</small></footer>

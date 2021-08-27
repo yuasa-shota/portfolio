@@ -1,0 +1,552 @@
+@charset "utf-8";
+/*
+Theme Name:yuasaportfolio
+Description:湯浅翔太のポートフォリオサイト
+
+*/
+
+
+
+body {
+  background: #fff;
+  font-family: "游ゴシック体", "YuGothic";
+
+}
+#logo {
+  height: 50px;
+  margin: 20px auto auto 0;
+}
+h1 a::after {
+  background: #fff;
+}
+h2 {
+  font-family: "游明朝", "Yu Mincho";
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px auto 50px 10px;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-family: "游明朝", "Yu Mincho";
+	padding:5px;
+}
+h4 {
+  font-size: 1.2em;
+  font-weight: bolder;
+  font-family: "游明朝", "Yu Mincho";
+	padding:5px;
+	margin-bottom: 10px;
+}
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-family: "游明朝", "Yu Mincho";
+  font-weight: bolder;
+  cursor: pointer;
+}
+.fa-greater-than:before{
+	margin-left: 10px;
+}
+/*NAV*/
+#nav_pc {
+  display: block;
+  top: 0;
+}
+#nav_pc ul {
+  width: 320px;
+  overflow: hidden;
+  font-family: "游明朝", "Yu Mincho";
+  font-weight: 600;
+  margin: 0 auto;
+}
+#nav_pc li {
+  width: 80px;
+  float: left;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+
+}
+#nav_pc a{
+	font-size: 1.1em;
+}
+#body_top nav ul li:nth-child(1), #body_products nav ul li:nth-child(2), #body_profile nav ul li:nth-child(3), #body_contact nav ul li:nth-child(4) {
+  background: #333;
+}
+#body_top nav ul li:nth-child(1) a, #body_products nav ul li:nth-child(2) a, #body_profile nav ul li:nth-child(3) a, #body_contact nav ul li:nth-child(4) a {
+  color: white;
+}
+#body_top nav#js_nav ul li:nth-child(1), #body_products nav#js_nav ul li:nth-child(2), #body_profile nav#js_nav ul li:nth-child(3), #body_contact nav#js_nav ul li:nth-child(4) {
+  background: #fff;
+}
+#body_top nav#js_nav ul li:nth-child(1) a, #body_products nav#js_nav ul li:nth-child(2) a, #body_profile nav#js_nav ul li:nth-child(3) a, #body_contact nav#js_nav ul li:nth-child(4) a {
+  color: #333;
+}
+
+#body_top nav ul li:nth-child(1) a::after, #body_products nav ul li:nth-child(2) a::after, #body_profile nav ul li:nth-child(3) a::after, #body_contact nav ul li:nth-child(4) a::after {
+  background: #333;
+}
+/*btn*/
+#js_btn {
+  display: none;
+}
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  line-height: 50px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10;
+
+}
+.menu-btn span {
+  color: #ccc;
+}
+/* 開閉用ボタンがクリックされた時のスタイル */
+
+body .fa-window-close::before {
+  content: "";
+}
+.menu {
+  font-family: "游明朝", "Yu Mincho";
+  font-weight: 600;
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  transition: all .5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu ul {
+  display: table-cell;
+  vertical-align: middle;
+  list-style: none;
+  padding-right: 9px;
+}
+.menu li {
+  display: list-item;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin: 0 0 0 auto;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.open .menu {
+  transition: all .5s;
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+.open .fa-bars::before {
+  content: "";
+}
+.open .fa-window-close::before {
+  content: "\f410";
+  position: relative;
+  left: 2px;
+}
+/*NAVここまで*/
+/*MAIN*/
+#wrapper {
+  max-width: 1200px;
+  margin: 50px auto 0;
+  position: relative;
+}
+#products {
+  overflow: hidden;
+  position: relative;
+  padding: 30px;
+		margin-bottom: 130px;
+}
+#products section {
+  margin: 0 auto 100px;
+	
+}
+#product section::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#products >section >h3>a{
+	line-height: 2em;
+	height: 2em;
+}
+#products p a {
+  position: absolute;
+  bottom: 30px;
+  right: 5vw;
+  height: 40px;
+  line-height: 40px;
+}
+#products section div{
+	height: 300px;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	
+}
+#products img{
+	max-width: 100%;
+		height: auto;
+}
+#products >section>a{
+	width: 100%;
+}
+
+#products >section>a>div:before{
+	content: "";
+	display: inline-block;
+	width:100%;
+	height: auto;
+	background-size: cover;
+}
+#product_portfolio>a>div:before{
+		background-image: url("img/wp_fv.jpg");
+}
+#product_italia_logo>a>div:before{
+	background-image: url("img/italia_logo_white.png");
+}
+#product_ramen>a>div::before{
+	background-image: url("img/ramen.jpg");
+}
+#products span{
+	border:2px solid #ccc;
+	border-radius: 1em;
+	font-size: 0.75em;
+	padding:2px;
+	margin: 2px;
+	float: left;
+}
+
+
+
+#profile {
+  padding: 30px;
+  padding-bottom: 50px;
+  position: relative;
+	overflow: hidden;
+}
+#profile > div > div > img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 50%;
+}
+#profile > div {
+  display: flex;
+  flex-flow: column;
+	  margin-bottom: 100px;
+}
+
+#profile > div > div {
+  width: 100%;
+}
+#profile a {
+  position: absolute;
+  right: 5vw;
+  height: 40px;
+  line-height: 40px;
+}
+/*MAINここまで*/
+/*FOOTER*/
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background: #ccc;
+  color: #333;
+}
+/*FOOTERここまで*/
+/*制作物ページのCSS*/
+#body_products #products{
+	border: none;
+
+}
+
+/*自己紹介ページのCSS*/
+#body_profile #profile > div > div > p:last-child {
+  position: inherit;
+  height: auto;
+  line-height: inherit;
+}
+#environment > div {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+#environment > section, #environment div > section {
+  padding: 30px 0 0;
+}
+#body_profile #profile > div:last-child {
+  flex-flow: column;
+}
+#environment>div>section:last-child{
+	position: relative;
+}
+#environment a{
+	bottom: 0;
+}
+#hobby h3{
+	margin-bottom: 20px;
+}
+#hobby section{
+	margin-bottom: 50px;
+	margin-top: 10px;
+	position: relative;
+
+}
+#hobby section p{
+	position: relative;
+	z-index: 2;
+}
+#hobby h4{
+	position: relative;
+	z-index: 2;
+}
+#hobby i{
+
+	position: absolute;
+	top:0;
+	left:50%;
+	transform: translate(-50%,0);
+
+}
+#hobby i::before{
+	position: relative;
+		display: block;
+	color: #ddd;
+
+}
+/*お問合せページのCSS*/
+#body_contact section{
+	padding: 30px;
+}
+#body_contact table {
+  max-width: 480px;
+  margin: 0 auto 100px;
+  font-family: "游明朝", "Yu Mincho";
+  position: relative;
+}
+#body_contact textarea, #body_contact input {
+  width: 100%;
+}
+#body_contact tr td {
+  padding: 10px;
+}
+#body_contact td:first-child {
+  width: 30%;
+}
+#body_contact td:last-child {
+  width: 70%;
+}
+#body_contact tr:last-child {
+  overflow: hidden;
+}
+
+#body_contact tr:last-child td:last-child input {
+position: absolute;
+	right:15%;
+}
+
+#body_contact tr:last-child td:first-child input {
+  position: absolute;
+	left:15%;
+}
+#body_contact tr:last-child input {
+  width: 80px;
+	border: 2px solid #ccc;
+	border-radius: 2em;
+	cursor: pointer;
+}
+#body_contact tr:last-child input:hover {
+	opacity: 0.8;
+}
+#body_contact footer{
+	margin-top: 0;
+}
+/*ポートフォリオサイトのCSS*/
+#portfolio{
+	overflow: hidden;
+	padding:5px;
+	box-sizing: border-box;
+}
+#portfolio h3{
+	margin-bottom: 20px;
+}
+#portfolio h4{
+	height: 4.5em;
+}
+#portfolio img{
+	vertical-align: top;
+	float: left;
+	width:45%;
+	margin-right: 10%;
+	height: auto;
+}
+#portfolio img:nth-of-type(2){
+	margin-right: 0;
+}
+#portfolio section{
+	padding: 5px;
+	box-sizing: border-box;
+	float: left;
+	width:40%;
+	margin-bottom: 20px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+#portfolio > div{
+	overflow: hidden;
+	margin-bottom: 120px;
+		
+}
+/*メディアクエリ*/
+@media screen and (min-width:769px) {
+	i:before{
+		display: none;
+	}
+  body #js_btn {
+    visibility: hidden;
+  }
+  #nav_pc {
+    display: block;
+    width: 100%;
+    background: #fff;
+  }
+  #nav_pc ul {
+    width: 480px;
+    overflow: hidden;
+    font-family: "游明朝", "Yu Mincho";
+    font-weight: 600;
+    margin: 0 auto;
+  }
+  #nav_pc li {
+    width: 120px;
+    float: left;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+  }
+  .header_flex {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+  }
+  a::after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .5s;
+  }
+  a:hover::after {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
+  #products section {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    height: 200px;
+  }
+	#products >section>a::after{
+	transform: none;
+	background: none;
+}
+	#products >section>a:hover>div:before{
+	opacity: 0.8;
+}
+  #products section:nth-of-type(3n) {
+    margin-right: 0
+  }
+  #products section:nth-of-type(3n)::after {
+    clear: both;
+  }
+	#products section div{
+	height: 150px;
+	}
+  #profile > div {
+    flex-flow: row;
+  }
+  #profile > div > div > img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  #profile > div > div:first-child {
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+  #profile > div > div:nth-child(2) {
+    width: 70%;
+  }
+	#hobby{
+		overflow: hidden;
+		width:90%;
+		margin: 0 auto;
+	}
+	#hobby section{
+		float: left;
+		width:30%;
+		margin-right: 5%;
+	}
+	#hobby section:last-child{
+		margin-right: 0;
+	}
+  /*個別ページのメディアクエリ*/
+  #body_profile #profile > div:last-child {
+    flex-flow: row;
+  }
+  #body_profile #environment > section {
+    width: 50%;
+    align-items: flex-start;
+    padding: 30px;
+  }
+  #body_profile #environment > div:last-child {
+    width: 50%;
+  }
+  #body_profile #environment div section {
+    padding: 0 30px 30px;
+  }
+  #body_profile #environment div section:first-child {
+    padding-top: 30px;
+  }
+	#wrapper #portfolio img{
+	vertical-align: top;
+	float: left;
+	width:25%;
+	margin-right: 5%;
+	height: auto;
+}
+#portfolio section{
+	float: left;
+	width:40%;
+	margin: 0;
+	margin-bottom: 20px;
+}
+	#portfolio h4{
+	height: auto;
+}
+}
