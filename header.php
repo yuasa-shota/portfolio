@@ -1,7 +1,7 @@
 <header><h1> <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/logo.png" alt="logo" id="logo"></a></h1>
 
 <!-- 開閉用ボタン -->
-<div class="menu-btn" id="js_btn"> <span><i class="fas fa-bars fa-5x"></i><i class="far fa-window-close fa-5x"></i></span> </div>
+<div class="menu-btn click" id="js_btn"> <span><i class="fas fa-bars fa-5x"></i><i class="far fa-window-close fa-5x"></i></span> </div>
 
 <!-- モーダルメニュー -->
 <nav class="menu" id="js_nav">

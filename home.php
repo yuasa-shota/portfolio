@@ -50,6 +50,37 @@
       </div>
     </div>
   </section>
+	 <section id="body_contact"> <h2>お問合せ</h2>
+  <form method="post" action="#">
+    <table>
+      <tbody>
+        <tr>
+          <td>貴社名</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>お名前(必須)</td>
+          <td><input type="text" required></td>
+        </tr>
+        <tr>
+          <td>連絡先(必須)</td>
+          <td><input type="text" required></td>
+        </tr>
+        <tr>
+          <td>件名</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td>本文(必須)</td>
+          <td><textarea required></textarea></td>
+        </tr>
+        <tr>
+          <td><input type="submit"></td>
+          <td><input type="reset"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form></section>
   <!-- コンテンツここまで --> 
 </div>
 <?php get_footer(); ?>

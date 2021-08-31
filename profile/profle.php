@@ -50,7 +50,7 @@
           <p>Githubを使った、gitのリポジトリの管理。多人数でのサイト作成経験がない為、Githubの凄さがあまり実感できずにいる。</p>
 					  	  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/icons/github.png" alt="">
 					  	  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/icons/git.png" alt="">
-			<a href="https://github.com/yuasa-shota">Github➡</a>
+			<a href="https://github.com/yuasa-shota" target="_blank" rel="noopener noreferrer">Github➡</a>
         </section>
       </div>
     </div>
